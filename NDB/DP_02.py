@@ -12,5 +12,5 @@ import random
 foods = []
 for i in range(100):
     foods.append(random.randint(0, 1000))
-foods = [3,1]
+foods = [3,1] 
 print(ant_food(foods))
