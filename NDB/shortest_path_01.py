@@ -16,7 +16,7 @@ pri_q = []
 heapq.heappush(pri_q, (TABLE[start_node], start_node))
 while pri_q:
     (distance, origin), node = heapq.heappop(pri_q)
-    if TABLE[node][0] < distance:
+    if TABLE[node][0] < distance:  
         continue
     neighbors = graph[node]
     for dest, weight in neighbors:
