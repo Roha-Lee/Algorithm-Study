@@ -1,13 +1,11 @@
 import sys 
 input = sys.stdin.readline
 N, C = map(int, input().split())
-locations = []
-for _ in range(N):
-    locations.append(int(input()))
+locations = [int(input()) for _ in range(N)]
 locations.sort()
 
 start = 1
-end = locations[-1] - start
+end = locations[-1] - locations[0]
 best = 0
 while start <= end:
     mid = (start + end) // 2
