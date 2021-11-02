@@ -18,7 +18,7 @@ class Solution:
                 result.append((nr, nc))
                 self.dfs(grid, nr, nc, max_val, result, results)
                 result.pop()
-                grid[nr][nc] = 0
+                grid[nr][nc] = 0  
                 
     def uniquePathsIII(self, grid: List[List[int]]) -> int:
         rows = len(grid)
