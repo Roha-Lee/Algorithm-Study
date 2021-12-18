@@ -17,4 +17,3 @@ class Solution:
     def rangeSumBST(self, root: Optional[TreeNode], low: int, high: int) -> int:
         self.preorder(low, high, root)
         return self.answer
-        
