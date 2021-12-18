@@ -9,5 +9,4 @@ class Solution:
                 max_val = max(max_val, val)
                 val = 1
         return max(max_val, val)
-                    
             
