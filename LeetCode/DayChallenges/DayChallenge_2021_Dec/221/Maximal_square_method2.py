@@ -1,19 +1,16 @@
-
-arr = [0, 4, 3, 5, 0]
-answer = 4 
-stack = []
-max_square = 0
-width = 0
-for num in arr:
-    min_val = 100000000
-    if num == 0:
-        width = 0
-    while stack and stack[-1] > num:
-        val = stack.pop()
-        width += 1
-        min_val = min(val, min_val)
-        # print(width, min_val)
-        max_square = max(max_square, min(width, min_val) ** 2)
-    stack.append(num)
-print(max_square)
-
+class Solution:
+    def maximalSquare(self, matrix: List[List[str]]) -> int:
+        rows, cols = len(matrix), len(matrix[0])
+        DP = [[0] * cols for _ in range(rows)]
+        result = 0
+        for r in range(rows):
+            for c in range(cols):
+                if matrix[r][c] == '0':
+                    DP[r][c] = 0
+                    continue
+                if r == 0 or c == 0:
+                    DP[r][c] = 1 
+                else:
+                    DP[r][c] = min(DP[r-1][c], DP[r][c-1], DP[r-1][c-1]) + 1
+                result = max(result, DP[r][c] **2)  
+        return result
