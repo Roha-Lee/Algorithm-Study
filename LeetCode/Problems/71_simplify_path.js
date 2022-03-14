@@ -4,7 +4,7 @@
  */
 var simplifyPath = function(path) {
     let result = [];
-    let filtered = path.split('/')
+    path.split('/')
     .filter(item => item !== '')
     .forEach(item => {
         if(item === '..'){
