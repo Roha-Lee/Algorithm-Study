@@ -7,5 +7,5 @@
 - 10월 Leet code day challenge 완료
 - 11월 Leet code day challenge 완료
 - 12월 Leet code day challenge 진행중
-    - 매일 푼 문제 간단하게 README로 설명하기 시작
+- 1월 Leet code day challenge 완료 
 
