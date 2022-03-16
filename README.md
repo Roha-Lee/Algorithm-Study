@@ -6,6 +6,6 @@
 ## DAY CHALLENGE :fire:
 - 10월 Leet code day challenge 완료
 - 11월 Leet code day challenge 완료
-- 12월 Leet code day challenge 진행중
+- 12월 Leet code day challenge 완료
 - 1월 Leet code day challenge 완료 
 
