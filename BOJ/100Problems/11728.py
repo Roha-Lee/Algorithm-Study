@@ -13,7 +13,6 @@ if __name__ == '__main__':
         else:
             result.append(b_list[b_idx])
             b_idx += 1
-    
     while a_idx < len(a_list):
         result.append(a_list[a_idx])
         a_idx += 1
