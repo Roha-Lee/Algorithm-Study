@@ -1,3 +1,17 @@
+Table: World
+
++-------------+---------+
+| Column Name | Type    |
++-------------+---------+
+| name        | varchar |
+| continent   | varchar |
+| area        | int     |
+| population  | int     |
+| gdp         | int     |
++-------------+---------+
+name is the primary key column for this table.
+Each row of this table gives information about the name of a country, the continent to which it belongs, its area, the population, and its GDP value.
+
 A country is big if:
 
 it has an area of at least three million (i.e., 3000000 km2), or
@@ -18,4 +32,4 @@ SELECT name, population, area FROM World WHERE area >= 3000000 or population >= 
     - UNION은 조회한 다수의 SELECT문을 하나로 합치고 싶을때 사용하며 중복되는 행은 하나만 표시해 준다고 한다. 
     - OR로 수행한 부분을 두번의 SELECT문을 통해 얻어오고, 이를 중복을 제거하면서 합치는 방식으로 구현한 듯 하다. 
     - OR이 더 효율적일 것 같다. 
-    
+
