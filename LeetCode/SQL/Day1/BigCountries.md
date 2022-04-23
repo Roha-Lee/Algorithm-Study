@@ -23,7 +23,9 @@ Return the result table in any order.
 The query result format is in the following example.
 
 # Write your MySQL query statement below
+```sql
 SELECT name, population, area FROM World WHERE area >= 3000000 or population >= 25000000
+```
 
 - 처음으로 작성해본 쿼리문 World라는 table에서 name, population, area라는 column을 고르는데, 조건이 WHERE이후에 나온다. 
 - 다른 사람들은 빠르게 만들기 위해 어떤 방식으로 쿼리문을 작성했는지 discussion탭을 확인해보았다. 

@@ -20,9 +20,11 @@ Return the result table in any order.
 The query result format is in the following example.
 
 # My answer 
+```sql
 SELECT name 
 FROM Customer 
 WHERE NOT referee_id = 2 OR referee_id IS NULL
+```
 
 # 알게된점 
 - WHERE에서 부정은 NOT을 이용한다. 
