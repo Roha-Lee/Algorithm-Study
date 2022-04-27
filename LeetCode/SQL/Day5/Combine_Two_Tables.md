@@ -43,3 +43,7 @@ FROM Person
 LEFT JOIN Address
 ON Person.personId = Address.personId
 ```
+- 알게 된 점 
+    - Left JOIN의 경우 왼쪽 테이블에 있는 컬럼을 남기기 때문에 위 문제는 Left join으로 접근하여 해결하였다. 
+    - 필요한 컬럼을 명시적으로 표시하여 최종 테이블을 만들어 주었다. 
+    
