@@ -4,6 +4,8 @@
 - Data Structure 2 study plan 완료 :link: [link](https://github.com/Roha-Lee/Algorithm-Study/tree/master/LeetCode/DataStructure_II)
 - Algorithm 1 study plan 완료 :link:[link](https://github.com/Roha-Lee/Algorithm-Study/tree/master/LeetCode/Algorithm_I) 
 - SQL 1 study plan 진행중
+- Data Structure 1 study plan 바뀐 문제로 다시 풀어보기
+- Algorithm 1 study plan 바뀐 문제로 다시 풀어보기
 ## DAY CHALLENGE :fire:
 - 10월 Leet code day challenge 완료
 - 11월 Leet code day challenge 완료
