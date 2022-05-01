@@ -41,6 +41,6 @@ FROM
     GROUP BY T.id
 ```
 # 알게된 점 
-![테이블](https://user-images.githubusercontent.com/82917798/166140844-6512a7b9-3780-4e9b-9896-71fed4e8320c.png)
+<img src="https://user-images.githubusercontent.com/82917798/166140844-6512a7b9-3780-4e9b-9896-71fed4e8320c.png" width=500px>
 - 위와 같은 테이블을 만들어서 id로 그룹을 만든뒤 p_id의 개수가 0이면 Root, c_id의 개수가 0이면 Leaf, 둘다 아니면 Inner로 판별하면 된다. 
 - 쿼리문 작성이 익숙하지 않아서 버벅이는 것 같다. 많이 연습하자. 
