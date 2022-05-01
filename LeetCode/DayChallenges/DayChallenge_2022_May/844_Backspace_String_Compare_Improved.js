@@ -8,7 +8,7 @@
     let idxT = t.length - 1;
     while(0 <= idxS || 0 <= idxT) {
         let skipS = 0; 
-        let skipT = 0
+        let skipT = 0;
         while(s[idxS] === '#' || skipS > 0) {
             if(s[idxS] === '#') skipS += 1;
             else if (skipS > 0) skipS -= 1;
