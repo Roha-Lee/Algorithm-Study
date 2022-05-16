@@ -15,7 +15,7 @@
     if(!root) return null;
     let prev = root;
     while(prev) {
-        let dummy = new Node(0);
+        const dummy = new Node(0);
         let curr = dummy;
         while(prev) {
             if(prev.left) {
