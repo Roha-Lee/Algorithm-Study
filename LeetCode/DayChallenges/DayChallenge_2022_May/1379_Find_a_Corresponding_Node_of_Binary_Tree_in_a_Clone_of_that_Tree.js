@@ -31,6 +31,5 @@
  * @return {TreeNode}
  */
 var getTargetCopy = function(original, cloned, target) {
-    const targetVal = target.val;
-    return findTargetFromTree(cloned, targetVal);
+    return findTargetFromTree(cloned, target.val);
 };
