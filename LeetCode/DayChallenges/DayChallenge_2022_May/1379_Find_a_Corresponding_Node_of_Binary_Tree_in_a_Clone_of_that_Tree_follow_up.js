@@ -12,16 +12,10 @@
  * @return {TreeNode}
  */
  const findTargetFromTree = function(node, clonedNode, target) {
-    let result;
     if(node === null) return null;
     if(node === target) return clonedNode;
-    if(node.left) {
-        result ||= findTargetFromTree(node.left, clonedNode.left, target);
-    }
-    if(node.right) {
-        result ||= findTargetFromTree(node.right, clonedNode.right, target);
-    }
-    return result;
+    return  findTargetFromTree(node.left, clonedNode.left, target) ||
+            findTargetFromTree(node.right, clonedNode.right, target);
 }
 
 
