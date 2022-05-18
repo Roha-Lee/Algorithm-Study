@@ -5,7 +5,7 @@
  * @param {number} newColor
  * @return {number[][]}
  */
- var floodFill = function(image, sr, sc, newColor) {
+var floodFill = function (image, sr, sc, newColor) {
     const numRow = image.length;
     const numCol = image[0].length;
     const targetColor = image[sr][sc];
@@ -18,18 +18,18 @@
     let nC;
     image[sr][sc] = newColor;
     visited[sr][sc] = true;
-    while(q.length > 0) {
-        for(const [r, c] of q) {
-           for(let i = 0; i < 4; i += 1) {
-               nR = r + dR[i];
-               nC = c + dC[i];
-               if(0 > nR || nR >= numRow || 0 > nC || nC >= numCol) continue;
-               if(!visited[nR][nC] && image[nR][nC] === targetColor) {
-                   image[nR][nC] = newColor;
-                   visited[nR][nC] = true;
-                   nextQ.push([nR, nC]);
-               }
-           }
+    while (q.length > 0) {
+        for (const [r, c] of q) {
+            for (let i = 0; i < 4; i += 1) {
+                nR = r + dR[i];
+                nC = c + dC[i];
+                if (0 > nR || nR >= numRow || 0 > nC || nC >= numCol) continue;
+                if (!visited[nR][nC] && image[nR][nC] === targetColor) {
+                    image[nR][nC] = newColor;
+                    visited[nR][nC] = true;
+                    nextQ.push([nR, nC]);
+                }
+            }
         }
         q = nextQ;
         nextQ = [];
