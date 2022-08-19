@@ -24,5 +24,5 @@
         }
         right++;
     }
-    return res;;
+    return res;
 };
